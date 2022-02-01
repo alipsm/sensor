@@ -1,0 +1,80 @@
+.box_obj{
+    background-color: rgb(65, 91, 102);
+    /* background-color: rgb(168, 210, 230); */
+    text-align: center;
+
+    
+    
+    
+ 
+    
+}
+/* input[type=text]{
+    background-color: rgb(217, 255, 220);
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 5px 10px;
+} */
+.box_person{
+    width: 40vw;
+    background-color: hsla(237, 32%, 22%, 0.836);
+    /* background-color: rgba(30, 29, 100, 0.678); */
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+   
+    text-align: center;
+}
+#container_person{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    
+    transition:height 3s ease-in;
+}
+.Height100{
+    height: max-content;
+}
+
+#btn_submit {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  #btn_submit::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  #btn_submit:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+  
+  #btn_submit:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(16, 15, 15);
+  }
